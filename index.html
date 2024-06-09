@@ -72,12 +72,12 @@
 
          @keyframes heartAnimation {
             0% {
-               transform: scale(3);
+               transform: scale(2.5);
                opacity: 0;
                top: -100px;
             }
             100% {
-               transform: scale(1.3);
+               transform: scale(1);
                opacity: 2;
             }
          }
@@ -86,7 +86,7 @@
 
    <body id="container">
       <div class="box" id="box">
-         <p>Namora comigo?</p>
+         <p>Fica comigo?</p>
          <div class="button-container">
             <button id="startAnimationButton" onclick="createHeart()">
                Sim
@@ -107,7 +107,9 @@
          setTimeout(() => {
             deleteBox.style.display = "flex";
             heart.remove();
-         }, 7000); // Remove o coração após  segundos e volta a caixa de pergunta
+            window.location.href =
+               "https://www.youtube.com/watch?v=pVmuFdh1WAg&ab_channel=BlissfulMind";
+         }, 4000); // Remove o coração após 7 segundos e volta a caixa de pergunta
       }
 
       let button = document.getElementById("not");
