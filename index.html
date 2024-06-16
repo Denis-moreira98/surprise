@@ -7,11 +7,11 @@
       <style>
          body {
             font-family: Arial, Helvetica, sans-serif;
-            background: linear-gradient(120deg, #481566, #060631fa);
+            background: linear-gradient(120deg, #5b22a5, #310727fa);
             display: flex;
             justify-content: center;
             align-items: center;
-            height: 100vh;
+            height: 98.3vh;
          }
 
          .box {
@@ -63,16 +63,17 @@
          .heart {
             position: absolute;
             width: 100%;
-            height: 100%;
+            height: 100vh;
             cursor: pointer;
-            background-image: url(https://i0.wp.com/www.multarte.com.br/wp-content/uploads/2018/10/coracao-png2.png?resize=220%2C220&ssl=1);
+            background-image: url(https://i.pinimg.com/564x/32/09/4b/32094b7e4d87f759cd034f66ebf540e4.jpg);
             object-fit: cover;
-            animation: heartAnimation 7s linear infinite;
+
+            animation: heartAnimation 6s linear infinite;
          }
 
          @keyframes heartAnimation {
             0% {
-               transform: scale(2.5);
+               transform: scale(1.5);
                opacity: 0;
                top: -100px;
             }
@@ -108,8 +109,8 @@
             deleteBox.style.display = "flex";
             heart.remove();
             window.location.href =
-               "https://www.youtube.com/watch?v=pVmuFdh1WAg&ab_channel=BlissfulMind";
-         }, 4000); // Remove o coração após 7 segundos e volta a caixa de pergunta
+               "https://www.youtube.com/watch?v=Wf-nksuWADw&ab_channel=DonaLegendas";
+         }, 6000); // Remove o coração após 7 segundos e volta a caixa de pergunta
       }
 
       let button = document.getElementById("not");
